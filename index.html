@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asngad Mustangin — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-overlay" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container">
+      <div class="brand">Asngad <span class="accent">Mustangin</span></div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="btn glass">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, saya Asngad — <span class="accent">Mahasiswa Sistem Informasi</span></h1>
+          <p class="lead">Mendesain antarmuka yang rapi dan membangun solusi sistem yang dapat diandalkan. Jurusan: Universitas Komputama.</p>
+          <div class="hero-ctas">
+            <a href="#portfolio" class="btn glass">Lihat Proyek</a>
+            <a href="#contact" class="btn outline">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Placeholder visual: bisa diganti dengan ilustrasi SVG -->
+          <div class="card mock-device">ASNGAD</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <p class="about-text">
+          Halo! Saya Asngad Mustangin — mahasiswa Sistem Informasi di Universitas Komputama. Perjalanan akademik saya di Universitas Komputama menumbuhkan ketertarikan pada bagaimana sistem informasi bisa menyederhanakan proses sehari-hari. Saya belajar metodologi pengembangan perangkat lunak, analisis sistem, serta prinsip-prinsip UI/UX. Saya menyukai kolaborasi tim dan sering terlibat dalam proyek kampus yang berfokus pada solusi praktis untuk sekolah dan UKM lokal.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill">Frontend — HTML, CSS, JS</div>
+          <div class="skill">UI/UX — Figma, Wireframing</div>
+          <div class="skill">Backend — Node.js, PHP</div>
+          <div class="skill">Database — MySQL</div>
+          <div class="skill">Versioning — Git</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>Portofolio</h2>
+        <p class="muted">Beberapa proyek latihan dan studi kasus</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="thumb" role="img" aria-label="Sistem Inventaris Sekolah">
+              <div class="thumb-placeholder">Inventaris Sekolah</div>
+            </div>
+            <div class="project-body">
+              <h3>Sistem Inventaris Sekolah</h3>
+              <p>Prototipe aplikasi untuk manajemen aset sekolah: pendataan, peminjaman, dan laporan inventaris.</p>
+              <div class="project-tags">PHP • MySQL • Bootstrap</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="thumb" role="img" aria-label="Analisis UI/UX Aplikasi E-commerce">
+              <div class="thumb-placeholder">Analisis UI/UX E-commerce</div>
+            </div>
+            <div class="project-body">
+              <h3>Analisis UI/UX Aplikasi E-commerce</h3>
+              <p>Studi perbaikan alur belanja dan prototipe hi-fi untuk aplikasi penjualan online.</p>
+              <div class="project-tags">Figma • User Testing • Prototyping</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="thumb" role="img" aria-label="Aplikasi Pendaftaran Online">
+              <div class="thumb-placeholder">Pendaftaran Online</div>
+            </div>
+            <div class="project-body">
+              <h3>Aplikasi Pendaftaran Online</h3>
+              <p>Sistem pendaftaran acara kampus dengan fitur verifikasi peserta dan statistik.</p>
+              <div class="project-tags">Node.js • Express • MongoDB</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="thumb" role="img" aria-label="Visualisasi Data Akademik">
+              <div class="thumb-placeholder">Visualisasi Data</div>
+            </div>
+            <div class="project-body">
+              <h3>Visualisasi Data Akademik</h3>
+              <p>Papan instrumen (dashboard) untuk melihat KPI akademik menggunakan chart interaktif.</p>
+              <div class="project-tags">Chart.js • Data Viz</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Ingin berkolaborasi atau melihat kode lebih lanjut? Kirim pesan.</p>
+        <form class="contact-form" action="#" onsubmit="return false;">
+          <input type="text" placeholder="Nama" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Pesan" rows="4" required></textarea>
+          <button class="btn glass" type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Asngad Mustangin — Universitas Komputama</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
